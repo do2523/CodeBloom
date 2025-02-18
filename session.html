@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coding Tutoring Sessions</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Global Reset */
+    *, *::before, *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      width: 100%;
+      overflow-x: hidden;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      background-color: #4CAF50;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      font-size: 1.5rem;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #333;
+      padding: 0.5rem;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-size: 1rem;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      padding: 2rem;
+    }
+
+    .session-card {
+      background-color: #f4f4f4;
+      width: 200px;
+      height: 250px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      border-radius: 15px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      padding: 1rem;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .session-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .session-logo {
+      width: 80px;
+      height: 80px;
+      object-fit: contain;
+      margin: 1rem 0;
+    }
+
+    .session-card h3 {
+      font-size: 1.2rem;
+    }
+
+    .session-card p {
+      font-size: 1rem;
+      font-weight: bold;
+      color: #4CAF50;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    Coding Tutoring Sessions
+  </header>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#sessions">Sessions</a>
+  </nav>
+  <div class="container">
+    <div class="session-card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="Python Logo" class="session-logo">
+      <h3>Python</h3>
+      <p>$15 per session</p>
+    </div>
+    <div class="session-card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg" alt="C++ Logo" class="session-logo">
+      <h3>C++</h3>
+      <p>$18 per session</p>
+    </div>
+    <div class="session-card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/f/f5/Typescript.svg" alt="TypeScript Logo" class="session-logo">
+      <h3>TypeScript</h3>
+      <p>$20 per session</p>
+    </div>
+    <div class="session-card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JavaScript Logo" class="session-logo">
+      <h3>JavaScript</h3>
+      <p>$17 per session</p>
+    </div>
+    <div class="session-card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Rust_programming_language_black_logo.svg" alt="Rust Logo" class="session-logo">
+      <h3>Rust</h3>
+      <p>$25 per session</p>
+    </div>
+  </div>
+  <footer>
+    &copy; 2025 Coding Tutoring. All Rights Reserved.
+  </footer>
+</body>
+</html>
