@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            overflow-x: hidden;
+        }
+        .container {
+            margin-top: 20px;
+            margin-left: 500px;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 90%;
+            max-width: 400px;
+            box-sizing: border-box;
+        }
+        input, textarea {
+            width: 100%;
+            margin: 10px 0;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+            nav {
+        display: flex;
+        justify-content: center;
+        background-color: #333;
+        padding: 0.5rem;
+        width: 100%;
+        }
+
+        nav a {
+        color: white;
+        text-decoration: none;
+        margin: 0 1rem;
+        font-size: 1rem;
+        }
+
+        nav a:hover {
+        text-decoration: underline;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: black;
+            color: white;
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    
+    <header style="text-align: center; font-size: 24px; padding: 20px; background-color: #007BFF; color: white; width: 100%;">Contact Us</header>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#sessions">Sessions</a>
+      </nav>
+    <div class="container">
+        <h2>Get in Touch</h2>
+        
+        <form action="https://api.web3forms.com/submit" method="POST" class="contact__form grid">
+            <input type="hidden" name="access_key" value="e7152b42-2e9a-4ef0-9271-66c55d8b7e02">
+            <input type="text" name="name" id="name" placeholder="Your Name" required>
+            <input type="email" name="email" id="email" placeholder="Your Email" required>
+            <textarea name="message" id="message" rows="5" placeholder="Your Message" required></textarea>
+            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+            
+            <button type="submit">Send Message</button>
+        </form>
+        <p id="response" style="color: green; display: none;">Message Sent!</p>
+        
+    </div>
+    
+    <footer>
+        &copy; 2025 Contact Us. All Rights Reserved.
+    </footer>
+    <script>
+        document.getElementById("contact_form").addEventListener("submit", function(event) {
+            event.preventDefault();
+            document.getElementById("response").style.display = "block";
+            setTimeout(() => {
+                document.getElementById("response").style.display = "none";
+                document.getElementById("contactForm").reset();
+            }, 2000);
+        });
+    </script>
+</body>
+</html>
