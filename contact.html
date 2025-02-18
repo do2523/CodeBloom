@@ -38,7 +38,7 @@
         button {
             width: 100%;
             padding: 12px;
-            background-color: #007BFF;
+            background-color: #1E3A8A;
             color: white;
             border: none;
             border-radius: 5px;
@@ -76,14 +76,14 @@
 </head>
 <body>
     
-    <header style="text-align: center; font-size: 24px; padding: 20px; background-color: #007BFF; color: white; width: 100%;">Contact Us</header>
+    <header style="text-align: center; font-size: 24px; padding: 20px; background-color: #1E3A8A; color: white; width: 100%;">Contact Us</header>
     <nav>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-        <a href="#pricing">Pricing</a>
-        <a href="#sessions">Sessions</a>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="session.html">Sessions</a>
       </nav>
-    <div class="container">
+    <div class="container" style="padding-left: 10px;">
         <h2>Get in Touch</h2>
         
         <form action="https://api.web3forms.com/submit" method="POST" class="contact__form grid">
@@ -93,7 +93,7 @@
             <textarea name="message" id="message" rows="5" placeholder="Your Message" required></textarea>
             <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
             
-            <button type="submit">Send Message</button>
+            <button style="margin-left: 10px;" type="submit">Send Message</button>
         </form>
         <p id="response" style="color: green; display: none;">Message Sent!</p>
         
