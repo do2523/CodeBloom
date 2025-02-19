@@ -37,7 +37,6 @@ We believe that quality coding education should be accessible to everyone.
 
 💡 Ready to start your coding journey? Contact us today to book your first lesson!  
 
-📧 **Email:** [Your Email Here]  
-🌍 **Website:** [Your Website URL Here]  
+📧 **Email:** do262431@gmail.com
 
 Let’s **bloom** together in the world of coding! 🌿  
